@@ -68,12 +68,13 @@ def scanninglaw(times1): # times in days
 	# rotation of the satellite itself
 	
 	vecrot2 = [0,1,0] 
-	ang2 = np.deg2rad(45) # 
+	ang2 = np.deg2rad(45) # solar aspect angle 
+	# 45 deg inclination to sun
+
 	freq2 = 360/63. # 360 deg per 63 days
 	mats = getmatrices(vecrot2,ang2)
 	vec1_2 = rotateVec(mats, vec1_1)
 	vec2_2 = rotateVec(mats, vec2_1)
-	# 45 deg inclination to sun
 
 
 	phase3 = np.deg2rad(freq2*times1)		
@@ -82,9 +83,7 @@ def scanninglaw(times1): # times in days
 	vec1_3 = rotateVec(mats, vec1_2)
 	vec2_3 = rotateVec(mats, vec2_2)
 	# precession around the sun
-	
-	eclpole = [270, 66.56]
-	
+		
 	mats = getmatrices([0, 1, 0],np.deg2rad(90))
 	vec1_4 = rotateVec(mats, vec1_3)
 	vec2_4 = rotateVec(mats, vec2_3)
