@@ -4,9 +4,8 @@
 # Sergey Koposov 2013
 # koposov@ast.cam.ac.uk
 #
-# Non-standard dependencies: sphere_rotate.py and idlsave.py available from
-# http://astrolibpy.googlecode.com/git/utils/idlsave.py
-# http://astrolibpy.googlecode.com/git/my_utils/sphere_rotate.py
+# Non-standard dependencies: sphere_rotate.py available from
+# https://github.com/segasai/astrolibpy/blob/master/my_utils/sphere_rotate.py
 # Standard dependencies numpy, scipy, healpy
 #
 
